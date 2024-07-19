@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Me{% endblock title %}
+
+{% block content %}
+
+<!-- Assignment 3-->
+<section class="about-section center-row">
+    <div class="about-image-container center-row">
+        <img src="{% static './img/me.jpg' %}" alt="me">
+    </div>
+
+    <div class="about-description-container center-column">
+        <h1>Full Stack Software Developer Student</h1>
+        <h2>Jay</h2>
+
+        <p>As a dedicated software developer student specializing in full stack development, I bring a robust skill set in HTML, CSS, JavaScript, and Python. My expertise extends to an array of technologies and libraries, including jQuery, Flask, Django, Node.js, React.js, Git, and SQLite.
+        Throughout my academic journey, I have honed my ability to build dynamic, responsive web applications, leveraging both front-end and back-end technologies. My proficiency in these areas enables me to create seamless and efficient user experiences, backed by solid and scalable server-side logic.<br></br>
+        In addition to my core competencies, I show a keen interest in Machine Learning and AI technology. While I have not yet integrated AI into my projects, I am eager to extend my scope in the future to include these cutting-edge technologies.
+        I am passionate about continuous learning and staying abreast of the latest industry trends. This dedication is reflected in my commitment to mastering various frameworks and tools, ensuring I can deliver modern and effective solutions.<br></br>
+        As I continue to develop my skills and knowledge, I am eager to contribute to innovative projects and collaborate with like-minded professionals in the field. My goal is to make a meaningful impact in the world of software development by combining my technical expertise with my enthusiasm for problem-solving and creative thinking.</p>
+
+        <div class="Skills-container center-column">
+            <h2>My Skills</h2>
+
+            <div class="skills-list center-row">
+                <label class="skills-label"> HTML & CSS </label>
+                <label class="skills-label"> Javascript </label>
+                <label class="skills-label"> Python </label>
+                <label class="skills-label"> jQuery </label>
+                <label class="skills-label"> Flask </label>
+                <label class="skills-label"> Django </label>
+                <label class="skills-label"> Node.js </label>
+                <label class="skills-label"> React.js </label>
+                <label class="skills-label"> Git </label>
+                <label class="skills-label"> SQLite </label>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

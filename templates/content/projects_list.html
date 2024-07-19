@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Projects{% endblock title %}
+
+{% block content %}
+
+<!-- 117 - Assignment 1 | Part 1: The style and structure of the projects section -->
+<section class="project-section center-column">
+    <h2>Projects</h2>
+
+    <div class="project-list-container center-row">
+        <!-- All the card here -->
+
+        {% for project in projects %}
+        <div class="project-cards">
+            <a href="{{ project.repository }}">
+                <img class="project-cards-img" src="{{ project.image }}" alt="">
+                <h1>{{ project.name }}</h1>
+                <p>{{ project.desctiption }}</p>
+                <p>{{ project.year }}</p>
+
+                <div class="skills-used center-row">
+                    {% for skill in project.skills.all %}
+                    <label class="skills-label">{{skill.name}}</label>
+                    {% endfor %}
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+
+    </div>
+</section>
+
+{% endblock content %}
